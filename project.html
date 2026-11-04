@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Checklist 3: Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects - Tavion D. Pearson</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Tavion D. Pearson</h1>
+    <p class="subtitle">Cybersecurity / Information Technology / Army Leader</p>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="project.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://www.txst.edu" target="_blank" rel="noopener">Texas State</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="portfolio-showcase" aria-labelledby="showcase-title">
+      <p class="showcase-label">Featured Project</p>
+      <h2 id="showcase-title">This website, showcased.</h2>
+      <p>
+        I built this site to bring my technical coursework, military leadership,
+        and professional experience together in one place.
+      </p>
+
+      <div class="showcase-controls">
+        <button type="button" data-preview="desktop" aria-pressed="true">
+          Desktop Layout
+        </button>
+        <button type="button" data-preview="mobile" aria-pressed="false">
+          Mobile Layout
+        </button>
+        <button type="button" data-preview="javascript" aria-pressed="false">
+          JavaScript in Action
+        </button>
+      </div>
+
+      <figure class="showcase-preview">
+        <img id="showcase-image" src="images/desktop_projects.png"
+            alt="Desktop view of the portfolio’s Projects grid">
+        <figcaption id="showcase-caption" aria-live="polite">
+          The desktop grid groups my technical coursework and experience by topic.
+        </figcaption>
+      </figure>
+  </section>
+
+
+    <section>
+      <h2>Projects</h2>
+
+      <p>
+        This page highlights my technical coursework, projects, and areas of
+        continued development in cybersecurity and information technology.
+        My experience includes network configuration, databases, systems
+        administration, information security, and object-oriented programming.
+    </p>
+
+      <!-- Checklist 4: CSS Grid project layout -->
+      <div class="project-grid">
+
+        <article class="project-card">
+          <h3>Network Configuration</h3>
+          <p>
+            Hands-on work with Cisco IOS, VLANs, TCP/IP, routing concepts,
+            and network troubleshooting.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>Database Design</h3>
+          <p>
+            Relational database projects using SQL, table relationships,
+            queries, and database design principles.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>Cybersecurity Labs</h3>
+          <p>
+            Coursework and labs focused on security fundamentals,
+            vulnerabilities, threats, and defensive practices.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>Object-Oriented Programming</h3>
+          <p>
+            Programming projects focused on classes, objects, methods,
+            data structures, and reusable code.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>Systems Administration</h3>
+          <p>
+            Experience with Windows systems, troubleshooting, user support,
+            and technical administration.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>Future Cyber Projects</h3>
+          <p>
+            Planned projects involving security automation, network defense,
+            penetration testing concepts, and cloud technologies.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Tavion D. Pearson</p>
+  </footer>
+
+
+  <script src="showcase.js"></script>
+</body>
+</html>
