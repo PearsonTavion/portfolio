@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!-- Checklist 3: Viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projects - Tavion D. Pearson</title>
   <link rel="stylesheet" href="styles.css">
@@ -20,101 +19,79 @@
       <a href="contact.html">Contact</a>
       <a href="https://www.txst.edu" target="_blank" rel="noopener">Texas State</a>
     </nav>
+    
+    <button id="theme-toggle" type="button" aria-pressed="false">
+      Dark mode
+    </button>  
+  
   </header>
 
   <main>
 
-    <section class="portfolio-showcase" aria-labelledby="showcase-title">
-      <p class="showcase-label">Featured Project</p>
-      <h2 id="showcase-title">This website, showcased.</h2>
-      <p>
-        I built this site to bring my technical coursework, military leadership,
-        and professional experience together in one place.
-      </p>
+    <section aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
 
-      <div class="showcase-controls">
-        <button type="button" data-preview="desktop" aria-pressed="true">
-          Desktop Layout
-        </button>
-        <button type="button" data-preview="mobile" aria-pressed="false">
-          Mobile Layout
-        </button>
-        <button type="button" data-preview="javascript" aria-pressed="false">
-          JavaScript in Action
-        </button>
-      </div>
-
-      <figure class="showcase-preview">
-        <img id="showcase-image" src="images/desktop_projects.png"
-            alt="Desktop view of the portfolio’s Projects grid">
-        <figcaption id="showcase-caption" aria-live="polite">
-          The desktop grid groups my technical coursework and experience by topic.
-        </figcaption>
-      </figure>
-  </section>
-
-
-    <section>
-      <h2>Projects</h2>
-
-      <p>
-        This page highlights my technical coursework, projects, and areas of
-        continued development in cybersecurity and information technology.
-        My experience includes network configuration, databases, systems
-        administration, information security, and object-oriented programming.
-    </p>
-
-      <!-- Checklist 4: CSS Grid project layout -->
       <div class="project-grid">
-
         <article class="project-card">
-          <h3>Network Configuration</h3>
+          <h3>Calculator &amp; Credit Score Checker</h3>
+          <img
+            src="images/calculator-credit.jpeg"
+            alt="Calculator result and credit score category shown in dark mode"
+          >
           <p>
-            Hands-on work with Cisco IOS, VLANs, TCP/IP, routing concepts,
-            and network troubleshooting.
+            This page combines a basic calculator with a tool that classifies an
+            entered credit score. I built the calculation logic, score categories,
+            and dark-mode control.
           </p>
+          <a href="demos/Calculator_demo/index.html">Open the calculator and checker</a>
         </article>
 
         <article class="project-card">
-          <h3>Database Design</h3>
+          <h3>Bobcat Brew Café Menu</h3>
+          <img
+            src="images/bobcat-brew.jpeg"
+            alt="Bobcat Brew menu with prices for hot drinks, cold drinks, and snacks"
+          >
           <p>
-            Relational database projects using SQL, table relationships,
-            queries, and database design principles.
+            Bobcat Brew is a café menu that displays drinks, snacks, and prices.
+            I built the three-category layout and aligned the prices so customers
+            can scan the menu quickly.
           </p>
+          <a href="demos/Bobcatbrew_demo/index.html">Open the Bobcat Brew menu</a>
         </article>
 
         <article class="project-card">
-          <h3>Cybersecurity Labs</h3>
-          <p>
-            Coursework and labs focused on security fundamentals,
-            vulnerabilities, threats, and defensive practices.
-          </p>
-        </article>
+          <h3>Personal Portfolio</h3>
+          <figure class="showcase-preview">
+            <img
+              id="showcase-image"
+              src="images/desktop_projects.png"
+              alt="Desktop view of my portfolio project grid"
+            >
+            <figcaption id="showcase-caption" aria-live="polite">
+              The desktop layout groups my projects into columns.
+            </figcaption>
+          </figure>
 
-        <article class="project-card">
-          <h3>Object-Oriented Programming</h3>
-          <p>
-            Programming projects focused on classes, objects, methods,
-            data structures, and reusable code.
-          </p>
-        </article>
+          <div class="showcase-controls">
+            <button type="button" data-preview="desktop" aria-pressed="true">
+              Desktop
+            </button>
+            <button type="button" data-preview="mobile" aria-pressed="false">
+              Mobile
+            </button>
+            <button type="button" data-preview="javascript" aria-pressed="false">
+              Hobby list
+            </button>
+          </div>
 
-        <article class="project-card">
-          <h3>Systems Administration</h3>
           <p>
-            Experience with Windows systems, troubleshooting, user support,
-            and technical administration.
+            This site introduces my background in cybersecurity, IT, and Army
+            leadership and showcases my coursework. I built the responsive layout,
+            JavaScript-generated hobby list, and interactive project preview.
           </p>
+          <a href="https://github.com/PearsonTavion/portfolio">View portfolio source</a>
         </article>
-
-        <article class="project-card">
-          <h3>Future Cyber Projects</h3>
-          <p>
-            Planned projects involving security automation, network defense,
-            penetration testing concepts, and cloud technologies.
-          </p>
-        </article>
-
       </div>
     </section>
 
@@ -126,5 +103,6 @@
 
 
   <script src="showcase.js"></script>
+  <script src="site.js"></script>
 </body>
 </html>
